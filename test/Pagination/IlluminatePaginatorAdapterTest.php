@@ -3,11 +3,14 @@
 namespace League\Fractal\Test\Pagination;
 
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;
-use League\Fractal\Test\TestCase;
 use Mockery;
+use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
+use PHPUnit\Framework\TestCase;
 
 class IlluminatePaginatorAdapterTest extends TestCase
 {
+    use MockeryPHPUnitIntegration;
+
     public function testPaginationAdapter()
     {
         $total = 50;
